@@ -10,7 +10,6 @@ namespace DAL
     {
         public const string ARCHIVO_GASTOS = "gastos.txt";
         public const string ARCHIVO_INGRESOS = "ingresos.txt";
-        public const string ARCHIVO_PROYECCIONES = "proyecciones.txt";
         public const string ARCHIVO_USUARIOS = "usuarios.txt";
     }
 }

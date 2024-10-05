@@ -8,42 +8,14 @@ using System.Threading.Tasks;
 
 namespace BBL
 {
-    public abstract class ServiviosDeIngresos
+    public interface ServiviosDeIngresos
     {
-        private RepositorioIngresos ingresos;
-
-        public ServiviosDeIngresos()
-        {
-            ingresos = new RepositorioIngresos(DAL.Configuracion.ARCHIVO_INGRESOS);
-        }
-
-        public void RegistrarIngreso(Ingreso ingreso)
-        {
-            ingresos.guardarDatos(ingreso);
-        }
-        public void EliminarIngreso(int idIngreso)
-        {
-            ingresos.eliminarDatos(idIngreso);
-        }
-        public Ingreso BuscarIngreso(int idIngreso)
-        {
-            return ingresos.buscarDato(idIngreso);
-        }
-        public string consultaIngresoPorRango(DateTime fechaInicial, DateTime fechaFinal)
-        {
-            return null;
-        }
-        public List<Ingreso> ObtenerIngresos()
-        {
-            return ingresos.obtenerDatos();
-        }
-        public string ConsultaIngresosMensualesPorRango(DateTime fechaInicial, DateTime fechaFinal)
-        {
-            return null;
-        }
-        public double ConsultaIngresosAnualesPorRango(DateTime fechaInicial, DateTime fechaFinal)
-        {
-            return 0.0;
-        }
+        void RegistrarIngreso(Ingreso ingreso);
+        void EliminarIngreso(int idIngreso);
+        Ingreso BuscarIngreso(int idIngreso);
+        string consultaIngresoPorRango(DateTime fechaInicial, DateTime fechaFinal);
+        List<Ingreso> ObtenerIngresos();
+        string ConsultaIngresosMensualesPorRango(DateTime fechaInicial, DateTime fechaFinal);
+        double ConsultaIngresosAnualesPorRango(DateTime fechaInicial, DateTime fechaFinal);
     }
 }

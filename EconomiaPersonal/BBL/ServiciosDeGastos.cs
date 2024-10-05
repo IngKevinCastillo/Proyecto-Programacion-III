@@ -8,43 +8,15 @@ using System.Threading.Tasks;
 
 namespace BBL
 {
-    internal abstract class ServiciosDeGastos
+    internal interface ServiciosDeGastos
     {
-        private RepositorioGastos gastos;
-        public ServiciosDeGastos()
-        {
-            gastos = new RepositorioGastos(DAL.Configuracion.ARCHIVO_GASTOS);
-        }
-
-        public void RegistrarGasto(Gasto gasto)
-        {
-            gastos.guardarDatos(gasto);
-        }
-        public void EliminarGasto(int idGasto)
-        {
-            gastos.eliminarDatos(idGasto);
-        }
-        public Gasto BuscarGasto(int idGasto)
-        {
-            return gastos.buscarDato(idGasto);
-        }
-        public string consultaGastoPorRango(DateTime fechaInicial, DateTime fechaFinal)
-        {
-            return null;
-        } 
-        public List<Gasto> ObtenerGastos()
-        {
-            return gastos.obtenerDatos();
-        }
-        public double ConsultaGastosMensualesPorRango(DateTime fechaInicial, DateTime fechaFinal)
-        {
-            return 0.0;
-        }
-        public double ConsultaGastosAnualesPorRango(DateTime fechaInicial, DateTime fechaFinal)
-        {
-            return 0.0;
-        }
-        //string Estadisticas();//pendiente
+        void RegistrarGasto(Gasto gasto);
+        void EliminarGasto(int idGasto);
+        Gasto BuscarGasto(int idGasto);
+        string consultaGastoPorRango(DateTime fechaInicial, DateTime fechaFinal);
+        List<Gasto> ObtenerGastos();
+        double ConsultaGastosMensualesPorRango(DateTime fechaInicial, DateTime fechaFinal);
+        double ConsultaGastosAnualesPorRango(DateTime fechaInicial, DateTime fechaFinal);
     }
 
 }

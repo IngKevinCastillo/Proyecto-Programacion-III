@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Configuracion.cs" />
-    <Compile Include="RepositorioProyecciones.cs" />
     <Compile Include="RepositorioGastos.cs" />
     <Compile Include="RepositorioIngresos.cs" />
     <Compile Include="RepositorioPrincipal.cs" />

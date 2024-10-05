@@ -43,8 +43,8 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ServiciosDeGastos.cs" />
-    <Compile Include="ServiciosDeProyecciones.cs" />
-    <Compile Include="Servivios.cs" />
+    <Compile Include="ServiviosAdmin.cs" />
+    <Compile Include="ServiviosApp.cs" />
     <Compile Include="ServiviosDeIngresos.cs" />
   </ItemGroup>
   <ItemGroup>

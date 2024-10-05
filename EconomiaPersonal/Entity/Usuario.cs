@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entity
 {
-    public class Usuario
+    public class Usuario : Persona
     {
         public Usuario() { }
         public Usuario(int idUsuario, string nombreUsuario, string contraseñaUsuario)
@@ -20,7 +20,7 @@ namespace Entity
         public string ContraseñaUsuario { get; set; }
         public override string ToString()
         {
-            return $"{IdUsuario};{NombreUsuario};{ContraseñaUsuario}";
+            return $"{base.ToString()};{IdUsuario};{NombreUsuario};{ContraseñaUsuario}";
         }
     }
 }

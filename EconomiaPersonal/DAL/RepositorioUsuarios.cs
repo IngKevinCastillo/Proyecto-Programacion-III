@@ -8,12 +8,11 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    internal class RepositorioUsuarios : RepositorioPrincipal<Usuario>
+    public class RepositorioUsuarios : RepositorioPrincipal<Usuario>
     {
         public RepositorioUsuarios(string nombreArchivo) : base(nombreArchivo)
         {
         }
-
         public override Usuario buscarDato(int id)
         {
             List<Usuario> usuarios = cargarDatos();
@@ -72,9 +71,12 @@ namespace DAL
         private Usuario Mapeo(string linea)
         {
             Usuario usuario = new Usuario();
-            usuario.IdUsuario = int.Parse(linea.Split(';')[0]);
-            usuario.NombreUsuario = linea.Split(';')[1];
-            usuario.ContraseñaUsuario = linea.Split(';')[2];
+            usuario.NombrePersona = linea.Split(';')[0];
+            usuario.ApellidoPersona = linea.Split(';')[1];
+            usuario.CorreoPersona = linea.Split(';')[2];
+            usuario.IdUsuario = int.Parse(linea.Split(';')[3]);
+            usuario.NombreUsuario = linea.Split(';')[4];
+            usuario.ContraseñaUsuario = linea.Split(';')[5];
             return usuario;
         }
     }

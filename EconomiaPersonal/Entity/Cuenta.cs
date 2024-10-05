@@ -10,7 +10,6 @@ namespace Entity
     {
         public Cuenta() { }
         public Usuario UsuarioCuenta {  get; set; }
-        public List<Proyeccion> proyecciones {  get; set; }
         public List<Gasto> gastos { get; set; }
         public List<Ingreso> ingresos { get; set; }
     }
