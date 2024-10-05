@@ -1,0 +1,14 @@
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\bin\Debug\Presentacion.exe.config
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\bin\Debug\BBL.dll
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\bin\Debug\Entity.dll
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\bin\Debug\DAL.dll
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\bin\Debug\BBL.pdb
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\bin\Debug\Entity.pdb
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\bin\Debug\DAL.pdb
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\obj\Debug\Presenta.BC77CD05.Up2Date
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\kevin\source\repos\EconomiaPersonal\Presentacion\obj\Debug\Presentacion.pdb

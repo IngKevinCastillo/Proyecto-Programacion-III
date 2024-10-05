@@ -1,0 +1,11 @@
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\bin\Debug\BBL.dll
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\bin\Debug\BBL.pdb
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\bin\Debug\DAL.dll
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\bin\Debug\Entity.dll
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\bin\Debug\DAL.pdb
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\bin\Debug\Entity.pdb
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\obj\Debug\BBL.csproj.AssemblyReference.cache
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\obj\Debug\BBL.csproj.CoreCompileInputs.cache
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\obj\Debug\BBL.csproj.Up2Date
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\obj\Debug\BBL.dll
+C:\Users\kevin\source\repos\EconomiaPersonal\BBL\obj\Debug\BBL.pdb
