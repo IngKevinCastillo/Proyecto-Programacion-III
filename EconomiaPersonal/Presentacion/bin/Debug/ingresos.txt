@@ -1,0 +1,50 @@
+1;Pago por conferencias;2023-07-07;2082889.38
+2;Venta de vehículo;2023-01-30;1630028.31
+3;Ingreso por consultoría;2023-09-09;437818.94
+4;Rendimientos financieros;2024-01-23;570923.54
+5;Reembolso de seguro;2024-10-04;116222.64
+6;Bonificación;2023-01-28;2500769.49
+7;Pago por conferencias;2023-12-15;56325.25
+8;Subsidio;2024-02-29;1818883.89
+9;Intereses bancarios;2024-01-16;942087.22
+10;Comisión por ventas;2024-09-10;1714797.10
+11;Subsidio;2024-08-13;2356215.98
+12;Honorarios profesionales;2024-09-17;349471.16
+13;Regalo;2024-09-05;335186.65
+14;Intereses bancarios;2024-03-22;963126.17
+15;Pago de mi salario;2024-04-11;1267048.14
+16;Pago por conferencias;2024-02-15;1724275.35
+17;Subsidio;2024-01-25;2338572.08
+18;Devolución de impuestos;2023-02-07;2085691.32
+19;Servicio prestado;2023-11-17;2343568.99
+20;Pago por conferencias;2024-01-02;254101.55
+21;Servicio prestado;2024-01-10;1783456.26
+22;Bonificación;2024-03-10;683365.19
+23;Pago de mi salario;2023-01-16;2437942.31
+24;Alquiler de propiedad;2023-08-08;2481588.86
+25;Alquiler de propiedad;2024-01-18;1124007.26
+26;Ganancia en inversiones;2024-05-18;1633838.59
+27;Reembolso;2023-07-16;2658596.08
+28;Bonificación;2024-12-02;1140409.11
+29;Trabajo freelance;2023-01-12;1952598.71
+30;Regalo;2024-05-05;2950757.44
+31;Alquiler de propiedad;2024-12-04;1296136.44
+32;Regalo;2023-02-16;1807100.84
+33;Ganancia en inversiones;2024-05-30;1655324.59
+34;Donación;2023-11-21;537546.10
+35;Donación;2024-11-23;1229333.65
+36;Ingreso por consultoría;2024-07-26;2864551.57
+37;Venta de vehículo;2023-04-14;2089525.23
+38;Regalo;2023-03-28;2097747.73
+39;Ingreso por consultoría;2024-07-21;1817743.36
+40;Rendimientos financieros;2023-03-05;1962933.31
+41;Venta de vehículo;2023-10-01;2334231.98
+42;Rendimientos financieros;2023-11-11;2159884.03
+43;Dividendos;2023-04-07;103744.44
+44;Venta de producto;2023-04-26;868777.30
+45;Trabajo freelance;2024-08-21;1716810.27
+46;Venta de vehículo;2024-03-30;2715160.17
+47;Subsidio;2023-10-31;351631.47
+48;Préstamo recibido;2024-11-03;1026085.67
+49;Pago de comisiones;2024-12-08;2569677.76
+50;Pago por conferencias;2024-04-26;2755014.95

@@ -36,8 +36,8 @@ namespace Presentacion
         }
         public void BuscarIngreso()
         {
-            Console.Write("Digite el id del ingreso a eliminar: "); int idIngreso = int.Parse(Console.ReadLine());
-            ServiviosApp.BuscarIngreso(idIngreso);
+            Console.Write("Digite el id del ingreso a buscar: "); int idIngreso = int.Parse(Console.ReadLine());
+            Console.WriteLine(ServiviosApp.BuscarIngreso(idIngreso));
         }
         public void RegistrarEgreso()
         {
@@ -64,11 +64,25 @@ namespace Presentacion
         public void BuscarEgreso()
         {
             Console.Write("Digite el id del egreso: "); int idEgreso = int.Parse(Console.ReadLine());
-            ServiviosApp.BuscarGasto(idEgreso);
+            Console.WriteLine(ServiviosApp.BuscarGasto(idEgreso));
         }
         public void consultaGasto()
         {
-            
+            Console.Write("Digite la fecha inicial (DD-MM-YYYY): "); string fecha = Console.ReadLine();
+            DateTime fechaGastoInicial;
+            if (!DateTime.TryParseExact(fecha, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out fechaGastoInicial))
+            {
+                Console.WriteLine("Formato de fecha inválido. Debe ser DD-MM-YYYY.");
+                return;
+            }
+            Console.Write("Digite la fecha final (DD-MM-YYYY): "); string fecha2 = Console.ReadLine();
+            DateTime fechaGastoFinal;
+            if (!DateTime.TryParseExact(fecha2, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out fechaGastoFinal))
+            {
+                Console.WriteLine("Formato de fecha inválido. Debe ser DD-MM-YYYY.");
+                return;
+            }
+            Console.WriteLine(ServiviosApp.consultaGastoPorRango(fechaGastoInicial,fechaGastoFinal));
         }
         public void ConsultaGastosAnuales()
         {

@@ -75,23 +75,30 @@ namespace DAL
             ingreso.Monto = double.Parse(linea.Split(';')[3]);
             return ingreso;
         }
-        /*
-         public double totalGasto()
+
+        public override Ingreso ConsultarDatoFecha(DateTime fechaConsulta)
         {
-            double totalGastos = 0;
-            foreach (var gasto in Gastos)
-            {
-                totalGastos += gasto.Monto;
-            }
-            return totalGastos;
+            List<Ingreso> ingresos = cargarDatos();
+            Ingreso ingresoConsultado = ingresos.Find(ingresoAConsultar => ingresoAConsultar.FechaIngreso.ToString("dd-MM-yyyy") == fechaConsulta.ToString("dd-MM-yyyy"));
+            return ingresoConsultado;
         }
-        public double totalIngresos()
-        {
-            double totalIngresos = 0;
-            foreach (var ingreso in Ingresos)
-            {
-                totalIngresos += ingreso.Monto;
-            }
-         */
+        /*
+public double totalGasto()
+{
+   double totalGastos = 0;
+   foreach (var gasto in Gastos)
+   {
+       totalGastos += gasto.Monto;
+   }
+   return totalGastos;
+}
+public double totalIngresos()
+{
+   double totalIngresos = 0;
+   foreach (var ingreso in Ingresos)
+   {
+       totalIngresos += ingreso.Monto;
+   }
+*/
     }
 }

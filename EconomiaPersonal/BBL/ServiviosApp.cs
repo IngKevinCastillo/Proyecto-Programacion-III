@@ -27,8 +27,27 @@ namespace BBL
         }
         public string consultaGastoPorRango(DateTime fechaInicial, DateTime fechaFinal)
         {
-            throw new NotImplementedException();
+            List<Gasto> listagastos = ObtenerGastos();
+            List<Gasto> gastosEncontrados = new List<Gasto>();
+            foreach (Gasto item in listagastos)
+            {
+                if (item.FechaGasto >= fechaInicial && item.FechaGasto <= fechaFinal)
+                {
+                    gastosEncontrados.Add(item);
+                }
+            }
+            if (gastosEncontrados.Count == 0)
+            {
+                return "No se encontraron gastos en el rango de fechas especificado.";
+            }
+            StringBuilder resultado = new StringBuilder();
+            foreach (Gasto gasto in gastosEncontrados)
+            {
+                resultado.AppendLine($"{gasto.IdGasto}; {gasto.DescripcionGasto}; {gasto.Categoria}; {gasto.FechaGasto.ToString("dd-MM-yyyy")}; {gasto.Monto}");
+            }
+            return resultado.ToString();
         }
+
         public double ConsultaGastosAnualesPorRango(DateTime fechaInicial, DateTime fechaFinal)
         {
             throw new NotImplementedException();

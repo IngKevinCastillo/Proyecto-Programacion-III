@@ -1,0 +1,51 @@
+1;Compras de mercado del mes;SI;Canasta Familiar;2024-10-17;548900
+51;Donación a caridad;SI;Educación;2023-09-30;577396.00
+2;Pago de deudas;NO;Salud;2023-04-29;88145.11
+3;Pago de servicios públicos;NO;Canasta Familiar;2024-04-15;800984.94
+4;Pago de servicios públicos;SI;Canasta Familiar;2023-06-15;383899.70
+5;Gastos por hobbies;SI;Entretenimiento;2023-11-09;991860.29
+6;Compra de ropa;SI;Salud;2024-03-03;157918.61
+7;Mantenimiento del hogar;SI;Salud;2023-07-06;109312.74
+8;Compra de libros;SI;Vivienda;2023-09-21;943215.97
+9;Pago de matrícula;SI;Transporte;2024-01-17;128274.18
+10;Compra de muebles;SI;Educación;2024-11-18;882922.91
+11;Compra de electrodomésticos;NO;Transporte;2024-12-14;772436.25
+12;Compra de alimentos para mascotas;NO;Salud;2024-08-15;141753.22
+13;Compra de herramientas;SI;Salud;2024-01-22;615607.08
+14;Compra de ropa;NO;Vivienda;2023-01-03;303551.14
+15;Pago de seguro de vida;NO;Canasta Familiar;2023-08-22;484555.95
+16;Pago de alquiler;NO;Transporte;2024-10-09;901193.87
+17;Donación a caridad;SI;Entretenimiento;2023-04-25;784614.91
+18;Pago de deudas;NO;Canasta Familiar;2024-01-23;447773.15
+19;Pago de suscripciones;NO;Vivienda;2023-03-19;591436.43
+20;Donación a caridad;SI;Canasta Familiar;2024-01-30;370902.11
+21;Pago de alquiler;SI;Educación;2024-09-18;751737.29
+22;Compra de muebles;SI;Transporte;2023-05-07;12938.49
+23;Compra de libros;SI;Educación;2024-04-07;994272.38
+24;Compras de mercado del mes;NO;Vivienda;2023-07-22;229516.55
+25;Pago de suscripciones;SI;Vivienda;2023-12-16;842372.95
+26;Compras de mercado del mes;SI;Entretenimiento;2023-02-19;735826.46
+27;Compra de ropa;NO;Canasta Familiar;2023-12-23;650949.56
+28;Compras de mercado del mes;NO;Vivienda;2023-11-29;311448.49
+29;Mantenimiento de vehículo;SI;Transporte;2023-05-27;423644.92
+30;Pago de suscripciones;SI;Canasta Familiar;2024-01-20;229450.69
+31;Donación a caridad;NO;Educación;2023-09-15;195007.07
+32;Compra de alimentos para mascotas;SI;Educación;2023-07-01;714850.70
+33;Donación a caridad;NO;Salud;2023-01-29;175514.76
+34;Pago de alquiler;SI;Salud;2023-10-15;81257.91
+35;Donación a caridad;NO;Transporte;2023-10-20;883196.24
+36;Compra de muebles;NO;Canasta Familiar;2023-06-02;623863.99
+37;Pago de transporte;NO;Salud;2024-11-29;762605.26
+38;Pago de suscripciones;SI;Entretenimiento;2023-10-05;916161.23
+39;Mantenimiento de vehículo;NO;Educación;2023-01-27;157801.59
+40;Inversión en negocio;SI;Salud;2023-03-10;254196.11
+41;Gastos por hobbies;SI;Transporte;2023-09-09;607182.63
+42;Compra de libros;NO;Entretenimiento;2024-08-13;375749.52
+43;Compras de mercado del mes;SI;Vivienda;2024-01-16;476100.83
+44;Compra de tecnología;NO;Transporte;2024-03-06;97426.49
+45;Pago de vacaciones;SI;Vivienda;2024-10-22;186522.90
+46;Donación a caridad;NO;Educación;2023-05-20;415657.86
+47;Compra de alimentos para mascotas;SI;Canasta Familiar;2023-09-09;246993.57
+48;Compra de alimentos para mascotas;NO;Vivienda;2024-07-28;61795.81
+49;Compra de herramientas;SI;Canasta Familiar;2023-05-11;924139.91
+50;Compra de alimentos para mascotas;NO;Transporte;2024-05-08;438363.88

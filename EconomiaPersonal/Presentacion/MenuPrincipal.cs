@@ -22,7 +22,7 @@ namespace Presentacion
                 Console.WriteLine("4. Salir del programa.\n");
                 Console.Write("Seleccione una opcion: ");
                 OP = int.Parse(Console.ReadLine());
-
+                Console.WriteLine("\n");
                 switch (OP)
                 {
                     case 1:
@@ -56,7 +56,7 @@ namespace Presentacion
                 Console.WriteLine("4. Regresar.\n");
                 Console.Write("Seleccione una opcion: ");
                 OP = int.Parse(Console.ReadLine());
-
+                Console.WriteLine("\n");
                 switch (OP)
                 {
                     case 1:
@@ -89,7 +89,7 @@ namespace Presentacion
                 Console.WriteLine("4. Regresar.\n");
                 Console.Write("Seleccione una opcion: ");
                 OP = int.Parse(Console.ReadLine());
-
+                Console.WriteLine("\n");
                 switch (OP)
                 {
                     case 1:
@@ -125,7 +125,7 @@ namespace Presentacion
                 Console.WriteLine("7. Regresar.\n");
                 Console.Write("Seleccione una opcion: ");
                 OP = int.Parse(Console.ReadLine());
-
+                Console.WriteLine("\n");
                 switch (OP)
                 {
                     case 1:
