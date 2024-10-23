@@ -15,8 +15,8 @@ namespace BBL
         Gasto BuscarGasto(int idGasto);
         string consultaGastoPorRango(DateTime fechaInicial, DateTime fechaFinal);
         List<Gasto> ObtenerGastos();
-        double ConsultaGastosMensualesPorRango(DateTime fechaInicial, DateTime fechaFinal);
-        double ConsultaGastosAnualesPorRango(DateTime fechaInicial, DateTime fechaFinal);
+        double ConsultaGastosMensualesPorRango(int mesInicial, int mesFinal);
+        double ConsultaGastosAnuales(int año);
     }
 
 }

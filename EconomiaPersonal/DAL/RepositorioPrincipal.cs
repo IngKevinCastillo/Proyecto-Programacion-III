@@ -34,6 +34,5 @@ namespace DAL
         public abstract T buscarDato(int id);
         public abstract List<T> obtenerDatos();
         public abstract void eliminarDatos(int id);
-        public abstract T ConsultarDatoFecha(DateTime fechaConsulta);
     }
 }

@@ -37,7 +37,7 @@ namespace Presentacion
         public void BuscarIngreso()
         {
             Console.Write("Digite el id del ingreso a buscar: "); int idIngreso = int.Parse(Console.ReadLine());
-            Console.WriteLine(ServiviosApp.BuscarIngreso(idIngreso));
+            Console.WriteLine("\n" + ServiviosApp.BuscarIngreso(idIngreso));
         }
         public void RegistrarEgreso()
         {
@@ -64,7 +64,7 @@ namespace Presentacion
         public void BuscarEgreso()
         {
             Console.Write("Digite el id del egreso: "); int idEgreso = int.Parse(Console.ReadLine());
-            Console.WriteLine(ServiviosApp.BuscarGasto(idEgreso));
+            Console.WriteLine("\n" + ServiviosApp.BuscarGasto(idEgreso));
         }
         public void consultaGasto()
         {
@@ -82,27 +82,47 @@ namespace Presentacion
                 Console.WriteLine("Formato de fecha inválido. Debe ser DD-MM-YYYY.");
                 return;
             }
-            Console.WriteLine(ServiviosApp.consultaGastoPorRango(fechaGastoInicial,fechaGastoFinal));
+            Console.WriteLine("\n" + ServiviosApp.consultaGastoPorRango(fechaGastoInicial,fechaGastoFinal));
         }
         public void ConsultaGastosAnuales()
         {
-            
+            Console.Write("Digite el anio a consultar: "); int año = int.Parse(Console.ReadLine());
+            Console.WriteLine("\n" + ServiviosApp.ConsultaGastosAnuales(año));
         }
         public void ConsultaGastosMensuales()
         {
-            
+            Console.Write("Digite el mes inicial: "); int fechaInicial = int.Parse(Console.ReadLine());
+            Console.Write("Digite el mes final: "); int fechaFinal = int.Parse(Console.ReadLine());
+            Console.WriteLine("\n" + ServiviosApp.ConsultaGastosMensualesPorRango(fechaInicial, fechaFinal));
         }
         public void consultaIngreso()
         {
-            
+            Console.Write("Digite la fecha inicial (DD-MM-YYYY): "); string fecha = Console.ReadLine();
+            DateTime fechaIngresoInicial;
+            if (!DateTime.TryParseExact(fecha, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out fechaIngresoInicial))
+            {
+                Console.WriteLine("Formato de fecha inválido. Debe ser DD-MM-YYYY.");
+                return;
+            }
+            Console.Write("Digite la fecha final (DD-MM-YYYY): "); string fecha2 = Console.ReadLine();
+            DateTime fechaIngresoFinal;
+            if (!DateTime.TryParseExact(fecha2, "dd-MM-yyyy", null, System.Globalization.DateTimeStyles.None, out fechaIngresoFinal))
+            {
+                Console.WriteLine("Formato de fecha inválido. Debe ser DD-MM-YYYY.");
+                return;
+            }
+            Console.WriteLine("\n" + ServiviosApp.consultaIngresoPorRango(fechaIngresoInicial, fechaIngresoFinal));
         }
         public void ConsultaIngresosAnuales()
         {
-            
+            Console.Write("Digite el anio a consultar: "); int año = int.Parse(Console.ReadLine());
+            Console.WriteLine("\n" + ServiviosApp.ConsultaIngresosAnuales(año));
         }
         public void ConsultaIngresosMensuales()
         {
-            
+            Console.Write("Digite el mes inicial: "); int fechaInicial = int.Parse(Console.ReadLine());
+            Console.Write("Digite el mes final: "); int fechaFinal = int.Parse(Console.ReadLine());
+            Console.WriteLine("\n" + ServiviosApp.ConsultaIngresosMensualesPorRango(fechaInicial, fechaFinal));
         }
     }
 }

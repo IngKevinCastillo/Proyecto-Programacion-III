@@ -15,7 +15,7 @@ namespace BBL
         Ingreso BuscarIngreso(int idIngreso);
         string consultaIngresoPorRango(DateTime fechaInicial, DateTime fechaFinal);
         List<Ingreso> ObtenerIngresos();
-        string ConsultaIngresosMensualesPorRango(DateTime fechaInicial, DateTime fechaFinal);
-        double ConsultaIngresosAnualesPorRango(DateTime fechaInicial, DateTime fechaFinal);
+        double ConsultaIngresosMensualesPorRango(int mesInicial, int mesFinal);
+        double ConsultaIngresosAnuales(int año);
     }
 }

@@ -42,12 +42,6 @@ namespace DAL
             }
 
         }
-
-        public override Usuario ConsultarDatoFecha(DateTime fechaConsulta)
-        {
-            throw new NotImplementedException();
-        }
-
         public override void eliminarDatos(int id)
         {
             try

@@ -117,11 +117,11 @@ namespace Presentacion
             {
                 Console.WriteLine("\n*****SERVICIO CONSULTAS*****");
                 Console.WriteLine("1. Consultar Gastos.");
-                Console.WriteLine("2. Consulta Gastos Anuales.");
-                Console.WriteLine("3. Consulta Gastos Mensuales.");
+                Console.WriteLine("2. Consulta Gastos Totales por Año.");
+                Console.WriteLine("3. Consulta Gastos Entre Menses.");
                 Console.WriteLine("4. Consultar Ingresos.");
-                Console.WriteLine("5. Consulta Ingresos Anuales.");
-                Console.WriteLine("6. Consulta Ingresos Mensuales.");
+                Console.WriteLine("5. Consulta Ingresos Totales por Año.");
+                Console.WriteLine("6. Consulta Ingresos Entre Menses.");
                 Console.WriteLine("7. Regresar.\n");
                 Console.Write("Seleccione una opcion: ");
                 OP = int.Parse(Console.ReadLine());
@@ -132,19 +132,19 @@ namespace Presentacion
                         menuOpciones.consultaGasto();
                         break;
                     case 2:
-                        menuOpciones.ConsultaGastosMensuales();
+                        menuOpciones.ConsultaGastosAnuales();
                         break;
                     case 3:
-                        menuOpciones.ConsultaGastosAnuales();
+                        menuOpciones.ConsultaGastosMensuales();
                         break;
                     case 4:
                         menuOpciones.consultaIngreso();
                         break;
                     case 5:
-                        menuOpciones.ConsultaIngresosMensuales();
+                        menuOpciones.ConsultaIngresosAnuales();
                         break;
                     case 6:
-                        menuOpciones.ConsultaIngresosAnuales();
+                        menuOpciones.ConsultaIngresosMensuales();
                         break;
                     case 7:
                         Console.WriteLine("REGRESANDO A MENU PPALL.......");

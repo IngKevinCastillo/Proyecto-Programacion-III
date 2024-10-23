@@ -3,6 +3,7 @@ using Entity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -48,25 +49,61 @@ namespace BBL
             return resultado.ToString();
         }
 
-        public double ConsultaGastosAnualesPorRango(DateTime fechaInicial, DateTime fechaFinal)
+        public double ConsultaGastosAnuales(int año)
         {
-            throw new NotImplementedException();
+            List<Gasto> gastos = ObtenerGastos();
+            List<Gasto> datosSeleccionados = gastos.Where(gasto => gasto.FechaGasto.Year == año).ToList();
+            return datosSeleccionados.Sum(dato => dato.Monto);
         }
-        public double ConsultaGastosMensualesPorRango(DateTime fechaInicial, DateTime fechaFinal)
+        public double ConsultaGastosMensualesPorRango(int mesInicial, int mesFinal)
         {
-            throw new NotImplementedException();
+            List<Gasto> gastos = ObtenerGastos();
+            List<Gasto> gastosEncontrados = new List<Gasto>();
+            var totalMesesSeleccionado = gastos.Where(gasto => gasto.FechaGasto.Month >= mesInicial && gasto.FechaGasto.Month <= mesFinal);
+            foreach (var item in totalMesesSeleccionado)
+            {
+                gastosEncontrados.Add(item);
+            }
+            return gastosEncontrados.Sum(gasto => gasto.Monto);
         }
         public string consultaIngresoPorRango(DateTime fechaInicial, DateTime fechaFinal)
         {
-            throw new NotImplementedException();
+            List<Ingreso> listaIngresos = ObtenerIngresos();
+            List<Ingreso> ingresosEncontrados = new List<Ingreso>();
+            foreach (Ingreso item in listaIngresos)
+            {
+                if (item.FechaIngreso >= fechaInicial && item.FechaIngreso <= fechaFinal)
+                {
+                    ingresosEncontrados.Add(item);
+                }
+            }
+            if (ingresosEncontrados.Count == 0)
+            {
+                return "No se encontraron ingresos en el rango de fechas especificado.";
+            }
+            StringBuilder resultado = new StringBuilder();
+            foreach (Ingreso ingreso in ingresosEncontrados)
+            {
+                resultado.AppendLine($"{ingreso.IdIngreso}; {ingreso.DescripcionIngreso}; {ingreso.FechaIngreso.ToString("dd-MM-yyyy")}; {ingreso.Monto}");
+            }
+            return resultado.ToString();
         }
-        public double ConsultaIngresosAnualesPorRango(DateTime fechaInicial, DateTime fechaFinal)
+        public double ConsultaIngresosAnuales(int año)
         {
-            throw new NotImplementedException();
+            List<Ingreso> ingresos = ObtenerIngresos();
+            List<Ingreso> datosSeleccionados = ingresos.Where(ingreso => ingreso.FechaIngreso.Year == año).ToList();
+            return datosSeleccionados.Sum(dato => dato.Monto);
         }
-        public string ConsultaIngresosMensualesPorRango(DateTime fechaInicial, DateTime fechaFinal)
+        public double ConsultaIngresosMensualesPorRango(int mesInicial, int mesFinal)
         {
-            throw new NotImplementedException();
+            List<Ingreso> ingresos = ObtenerIngresos();
+            List<Ingreso> ingresosEncontrados = new List<Ingreso>();
+            var totalMesesSeleccionado = ingresos.Where(ingreso => ingreso.FechaIngreso.Month >= mesInicial && ingreso.FechaIngreso.Month <= mesFinal);
+            foreach (var item in totalMesesSeleccionado)
+            {
+                ingresosEncontrados.Add(item);
+            }
+            return ingresosEncontrados.Sum(ingreso => ingreso.Monto);
         }
         public void EliminarGasto(int idGasto)
         {
@@ -91,6 +128,14 @@ namespace BBL
         public void RegistrarIngreso(Ingreso ingreso)
         {
             ingresos.guardarDatos(ingreso);
+        }
+        public string consulaIngresoPorDia()
+        {
+            return null;
+        }
+        public string consulaGastoPorDia()
+        {
+            return null;
         }
     }
 }

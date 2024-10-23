@@ -43,7 +43,7 @@ namespace DAL
             }
         }
 
-        public override Gasto ConsultarDatoFecha(DateTime fechaConsulta)
+        public Gasto ConsultarDatoFecha(DateTime fechaConsulta)
         {
             List<Gasto> gastos = cargarDatos();
             Gasto gastoConsultado = gastos.Find(gastoAConsultar => gastoAConsultar.FechaGasto.ToString("dd-MM-yyyy") == fechaConsulta.ToString("dd-MM-yyyy"));

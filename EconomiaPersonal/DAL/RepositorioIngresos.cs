@@ -76,7 +76,7 @@ namespace DAL
             return ingreso;
         }
 
-        public override Ingreso ConsultarDatoFecha(DateTime fechaConsulta)
+        public Ingreso ConsultarDatoFecha(DateTime fechaConsulta)
         {
             List<Ingreso> ingresos = cargarDatos();
             Ingreso ingresoConsultado = ingresos.Find(ingresoAConsultar => ingresoAConsultar.FechaIngreso.ToString("dd-MM-yyyy") == fechaConsulta.ToString("dd-MM-yyyy"));
