@@ -9,8 +9,11 @@ namespace Entity
     public class Usuario : Persona
     {
         public Usuario() { }
-        public Usuario(int idUsuario, string nombreUsuario, string contraseñaUsuario)
+        public Usuario(string nombre, string apellido, string correoElectronico, int idUsuario, string nombreUsuario, string contraseñaUsuario)
         {
+            base.NombrePersona = nombre;
+            base.ApellidoPersona = apellido;
+            base.CorreoPersona = correoElectronico;
             IdUsuario = idUsuario;
             NombreUsuario = nombreUsuario;
             ContraseñaUsuario = contraseñaUsuario;

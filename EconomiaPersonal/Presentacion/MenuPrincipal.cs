@@ -19,7 +19,8 @@ namespace Presentacion
                 Console.WriteLine("1. Servicios de Ingresos.");
                 Console.WriteLine("2. Servicios de Egresos.");
                 Console.WriteLine("3. Servicios de Consulta.");
-                Console.WriteLine("4. Salir del programa.\n");
+                Console.WriteLine("4. Servicios Admin.");
+                Console.WriteLine("5. Salir del programa.\n");
                 Console.Write("Seleccione una opcion: ");
                 OP = int.Parse(Console.ReadLine());
                 Console.WriteLine("\n");
@@ -35,13 +36,16 @@ namespace Presentacion
                         ServiciosConsulta();
                         break;
                     case 4:
+                        ServiciosAdmin();
+                        break;
+                    case 5:
                         Console.WriteLine("SALIENDO DE LA APP.............");
                         break;
                     default:
                         Console.WriteLine("Seleccione una opcion valida.");
                         break;
                 }
-            } while (OP != 4);
+            } while (OP != 5);
             Console.ReadKey();
         }
         private void ServiciosIngresos()
@@ -154,6 +158,39 @@ namespace Presentacion
                         break;
                 }
             } while (OP != 7);
+        }
+        private void ServiciosAdmin()
+        {
+            int OP = 0;
+            do
+            {
+                Console.WriteLine("\n*****SERVICIO ADMIN*****");
+                Console.WriteLine("1. Agregar Usuario.");
+                Console.WriteLine("2. Eliminar Usuario.");
+                Console.WriteLine("3. Buscar Usuario.");
+                Console.WriteLine("4. Regresar.\n");
+                Console.Write("Seleccione una opcion: ");
+                OP = int.Parse(Console.ReadLine());
+                Console.WriteLine("\n");
+                switch (OP)
+                {
+                    case 1:
+                        menuOpciones.AgregarUsuario();
+                        break;
+                    case 2:
+                        menuOpciones.EliminarUsuario();
+                        break;
+                    case 3:
+                        menuOpciones.BuscarUsuario();
+                        break;
+                    case 4:
+                        Console.WriteLine("REGRESANDO A MENU PPALL.......");
+                        break;
+                    default:
+                        Console.WriteLine("Seleccione una opcion valida.");
+                        break;
+                }
+            } while (OP != 4);
         }
     }
 }

@@ -25,6 +25,7 @@ namespace BBL
 
         public void EliminarUsuario(int idUsuario)
         {
+
             usuarios.eliminarDatos(idUsuario);
         }
 

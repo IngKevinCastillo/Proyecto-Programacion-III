@@ -12,6 +12,7 @@ namespace Presentacion
     public class MenuOpciones
     {
         ServiviosApp ServiviosApp = new ServiviosApp();
+        ServiviosAdmin ServiviosAdmin = new ServiviosAdmin();
         public MenuOpciones() { }
         public void RegistrarIngreso()
         {
@@ -123,6 +124,28 @@ namespace Presentacion
             Console.Write("Digite el mes inicial: "); int fechaInicial = int.Parse(Console.ReadLine());
             Console.Write("Digite el mes final: "); int fechaFinal = int.Parse(Console.ReadLine());
             Console.WriteLine("\n" + ServiviosApp.ConsultaIngresosMensualesPorRango(fechaInicial, fechaFinal));
+        }
+        public void AgregarUsuario()
+        {
+            Usuario usuario = null;
+            Console.Write("Digite el nombre de la persona: "); string nombrePersona = Console.ReadLine();
+            Console.Write("Digite el apellido de la persona: "); string apellidoPersona = Console.ReadLine();
+            Console.Write("Digite el correo de la persona: "); string correoPersona = Console.ReadLine();
+            Console.Write("Digite el id del usuario: "); int idUsuario = int.Parse(Console.ReadLine());
+            Console.Write("Digite el nombre del usuario: "); string nombreUsuario = Console.ReadLine();
+            Console.Write("Digite la contraseña del usuario: "); string contraseñaUsuario = Console.ReadLine();
+            usuario = new Usuario(nombrePersona,apellidoPersona,correoPersona, idUsuario,nombreUsuario,contraseñaUsuario);
+            ServiviosAdmin.AgregarUsuario(usuario);
+        }
+        public void EliminarUsuario()
+        {
+            Console.Write("Digite el id del usuario a eliminar: "); int idUsuario = int.Parse(Console.ReadLine());
+            ServiviosAdmin.EliminarUsuario(idUsuario);
+        }
+        public void BuscarUsuario()
+        {
+            Console.Write("Digite el id del usuario a buscar: "); int idUsuario = int.Parse(Console.ReadLine());
+            Console.WriteLine(ServiviosAdmin.BuscarUsuario(idUsuario).ToString());
         }
     }
 }
